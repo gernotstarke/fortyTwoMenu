@@ -20,11 +20,15 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Menu" id="27O-Mz-yYu">
             <items>
-                <menuItem title="toggle hidden files" state="on" id="O0K-oG-dAh">
+                <menuItem title="Toggle hidden files" state="on" id="O0K-oG-dAh">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="menuClicked:" target="Voe-Tx-rLC" id="bWJ-HE-zXk"/>
                     </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Hu2-2T-dyv"/>
+                <menuItem title="Quit" id="LK1-9L-JFV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="-36.5" y="-147.5"/>
