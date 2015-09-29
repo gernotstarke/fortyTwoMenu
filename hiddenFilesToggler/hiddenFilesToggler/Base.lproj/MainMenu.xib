@@ -29,9 +29,12 @@
                 <menuItem isSeparatorItem="YES" id="Hu2-2T-dyv"/>
                 <menuItem title="Quit" id="LK1-9L-JFV">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitAction:" target="Voe-Tx-rLC" id="bcP-jt-cMO"/>
+                    </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-36.5" y="-147.5"/>
+            <point key="canvasLocation" x="-131.5" y="-236.5"/>
         </menu>
     </objects>
 </document>
