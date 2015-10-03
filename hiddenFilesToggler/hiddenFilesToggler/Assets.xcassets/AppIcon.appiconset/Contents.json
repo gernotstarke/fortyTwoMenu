@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-16.png",
+      "filename" : "onStatusIcon-16.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-32.png",
+      "filename" : "onStatusIcon-32.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-33.png",
+      "filename" : "onStatusIcon-33.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-64.png",
+      "filename" : "onStatusIcon-64.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-128.png",
+      "filename" : "onStatusIcon-128.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-256.png",
+      "filename" : "onStatusIcon-256.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-257.png",
+      "filename" : "onStatusIcon-257.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-513.png",
+      "filename" : "onStatusIcon-512.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-512.png",
+      "filename" : "onStatusIcon-513.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "hiddenFilesTogglerIcon-orig-1024.png",
+      "filename" : "onStatusIcon-1024.png",
       "scale" : "2x"
     }
   ],
