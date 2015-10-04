@@ -23,19 +23,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
 
     
+    // after app launched, do the following:
+    // 1.) set icon to either on/off
+    // 2.) set appropriate menu text
+    //
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // statusIcon is the name of the imageSet in the Assets.xcassets folder
-        let icon = NSImage(named: "offStatusIcon" )
+        
+        setIcon( togglerModel.showAllFilesState)
+        
+        
+    }
+    
+    
+    
+    /**************
+    set icon, in harmony with current setting
+    ***************/
+    func setIcon( currentState: Bool ) {
+        
+        let icon = NSImage(
+            named: togglerModel.currentIconName( currentState ))
         icon?.template = false
         
         statusItem.image = icon
-        
         statusItem.menu = statusMenu
+    
     }
     
     // quit the application
     @IBAction func quitAction(sender: NSMenuItem) {
-        
+         NSApplication.sharedApplication().terminate(self)
     }
 
     @IBAction func menuClicked(sender: NSMenuItem) {
