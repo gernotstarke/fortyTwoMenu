@@ -24,14 +24,9 @@ class TogglerModel {
         }
     }
    
-    // define an operating system task from which we can call
-    // the "default" application
-    private let defaultTask = NSTask()
-    
     
     init() {
         // initialize
-        defaultTask.launchPath = "/usr/bin/defaults"
         
         showAllFilesState = self.determineInitialShowAllFilesState()
     }
@@ -49,14 +44,21 @@ class TogglerModel {
     // as it takes rather long, we try to do it only once,
     // and later on manage this state ourself.
     func determineInitialShowAllFilesState() -> Bool {
+        // define an operating system task from which we can call
+        // the "default" application
+        let task = NSTask()
+        
+        task.launchPath = "/usr/bin/defaults"
+        
+        
         // defaultTask expects array
-        defaultTask.arguments = ["read", "com.apple.finder", "AppleShowAllFiles"]
+        task.arguments = ["read", "com.apple.finder", "AppleShowAllFiles"]
  
         let pipe = NSPipe()
-        defaultTask.standardOutput = pipe
+        task.standardOutput = pipe
         
-        defaultTask.launch()
-        defaultTask.waitUntilExit()
+        task.launch()
+        task.waitUntilExit()
 
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output: NSString = NSString(data: data, encoding: NSUTF8StringEncoding)!
@@ -66,23 +68,50 @@ class TogglerModel {
         //print(output)
         
         switch output {
-        case "No":
-            result = false
+            case "No":
+                result = false
             
-        case "Yes":
-            result = true
+            case "Yes":
+                result = true
             
-        default:
-            result = false
+            default:
+                result = false
         }
         
         return result
     }
     
     
-    func setShowAllFilesState(toState: Bool) {
+    
+    func setShowAllFilesState() {
+        let state: String
         
+        switch showAllFilesState {
+            case true: state = "YES"
+            case false: state = "NO"
+        }
+        
+        // define an operating system task from which we can call
+        // the "default" application
+        let task = NSTask()
+        task.launchPath = "/usr/bin/defaults"
+        
+        // defaultTask expects array
+        task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", state]
+        
+        task.launch()
+        task.waitUntilExit()
+        
+        let killFinderTask = NSTask()
+        killFinderTask.launchPath = "/usr/bin/killall"
+        killFinderTask.arguments = ["Finder"]
+        killFinderTask.launch()
+        
+        // now switch state...
+        showAllFilesState = !showAllFilesState
+ 
     }
+    
     
     func setMenuItemText() {
         

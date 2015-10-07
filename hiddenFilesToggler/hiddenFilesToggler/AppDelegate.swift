@@ -57,29 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func menuClicked(sender: NSMenuItem) {
         print("toggle hidden files clicked...")
-        let task = NSTask()
-        task.launchPath = "/usr/bin/defaults"
-        
-        if (sender.state == NSOnState) {
-            sender.state = NSOffState
-            
-            // task expects array
-            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "NO"]
-        }
-        else {
-            sender.state = NSOnState
-            
-            // task expects array
-            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "YES"]
-        }
-        
-        task.launch()
-        task.waitUntilExit()
-        
-        let killFinderTask = NSTask()
-        killFinderTask.launchPath = "usr/bin/killall"
-        killFinderTask.arguments = ["Finder"]
-        killFinderTask.launch()
+        togglerModel.setShowAllFilesState()
     }
     
 }
