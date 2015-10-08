@@ -10,7 +10,6 @@
 		0C1035911BB83A2F00C97C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1035901BB83A2F00C97C57 /* AppDelegate.swift */; };
 		0C1035931BB83A2F00C97C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1035921BB83A2F00C97C57 /* Assets.xcassets */; };
 		0C1035961BB83A2F00C97C57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1035941BB83A2F00C97C57 /* MainMenu.xib */; };
-		0C1035A11BB83A2F00C97C57 /* hiddenFilesTogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1035A01BB83A2F00C97C57 /* hiddenFilesTogglerTests.swift */; };
 		0C1035AC1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1035AB1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift */; };
 		0C33EB9E1BB982A00009FEFF /* TogglerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33EB9D1BB982A00009FEFF /* TogglerModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -39,8 +38,6 @@
 		0C1035951BB83A2F00C97C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0C1035971BB83A2F00C97C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C10359C1BB83A2F00C97C57 /* hiddenFilesTogglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiddenFilesTogglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1035A01BB83A2F00C97C57 /* hiddenFilesTogglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenFilesTogglerTests.swift; sourceTree = "<group>"; };
-		0C1035A21BB83A2F00C97C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C1035A71BB83A2F00C97C57 /* hiddenFilesTogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiddenFilesTogglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1035AB1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenFilesTogglerUITests.swift; sourceTree = "<group>"; };
 		0C1035AD1BB83A2F00C97C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				0C10358F1BB83A2F00C97C57 /* hiddenFilesToggler */,
-				0C10359F1BB83A2F00C97C57 /* hiddenFilesTogglerTests */,
 				0C1035AA1BB83A2F00C97C57 /* hiddenFilesTogglerUITests */,
 				0C10358E1BB83A2F00C97C57 /* Products */,
 			);
@@ -102,15 +98,6 @@
 				0C1035971BB83A2F00C97C57 /* Info.plist */,
 			);
 			path = hiddenFilesToggler;
-			sourceTree = "<group>";
-		};
-		0C10359F1BB83A2F00C97C57 /* hiddenFilesTogglerTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C1035A01BB83A2F00C97C57 /* hiddenFilesTogglerTests.swift */,
-				0C1035A21BB83A2F00C97C57 /* Info.plist */,
-			);
-			path = hiddenFilesTogglerTests;
 			sourceTree = "<group>";
 		};
 		0C1035AA1BB83A2F00C97C57 /* hiddenFilesTogglerUITests */ = {
@@ -260,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1035A11BB83A2F00C97C57 /* hiddenFilesTogglerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

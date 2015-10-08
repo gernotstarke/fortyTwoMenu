@@ -16,7 +16,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var menuClicked: NSMenuItem!
     @IBOutlet weak var statusMenu: NSMenu!
 
+    @IBOutlet weak var ipAddress: NSMenuItem!
    
+    @IBOutlet weak var memory_1: NSMenuItem!
+    @IBOutlet weak var memory_2: NSMenuItem!
+    @IBOutlet weak var memory_3: NSMenuItem!
+    
     var togglerModel = TogglerModel()
     
     // get reference to statusBar (aka menuBar)
@@ -31,6 +36,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         setIcon( togglerModel.showAllFilesState)
         
+        memory_1.title = "calculating..."
+        memory_2.title = "calculating..."
+        memory_3.title = "calculating..."
+        
+        
+        
         
     }
     
@@ -42,7 +53,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func setIcon( currentState: Bool ) {
         
         let icon = NSImage(
-            named: togglerModel.currentIconName( currentState ))
+            named: togglerModel.systemBarIconName)
         icon?.template = false
         
         statusItem.image = icon

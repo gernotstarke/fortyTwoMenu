@@ -13,6 +13,10 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="hiddenFilesToggler" customModuleProvider="target">
             <connections>
+                <outlet property="ipAddress" destination="ejW-ff-Irs" id="MxA-MS-2Sk"/>
+                <outlet property="memory_1" destination="hxB-Bf-N5u" id="wb3-tG-sMC"/>
+                <outlet property="memory_2" destination="Hdk-iw-iNW" id="Pyh-n3-Xju"/>
+                <outlet property="memory_3" destination="vhL-ir-8BY" id="wKh-mB-4Pa"/>
                 <outlet property="menuClicked" destination="O0K-oG-dAh" id="3hi-Lj-2SE"/>
                 <outlet property="statusMenu" destination="27O-Mz-yYu" id="Qpd-Iz-aZS"/>
             </connections>
@@ -27,6 +31,26 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Hu2-2T-dyv"/>
+                <menuItem title="Top Memory Usage:" enabled="NO" id="miA-DR-PjN">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="memory-1" enabled="NO" id="hxB-Bf-N5u">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="memory-2" enabled="NO" id="Hdk-iw-iNW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="memory-3" enabled="NO" id="vhL-ir-8BY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="AM4-De-1jS"/>
+                <menuItem title="Public IP address:" enabled="NO" id="Iqd-Ss-x68">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="ipAddress" enabled="NO" id="ejW-ff-Irs">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Ahs-pR-f3o"/>
                 <menuItem title="Quit" id="LK1-9L-JFV">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
