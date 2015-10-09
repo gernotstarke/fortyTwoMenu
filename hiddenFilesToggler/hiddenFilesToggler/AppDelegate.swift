@@ -40,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         memory_2.title = "calculating..."
         memory_3.title = "calculating..."
         
-        
+        ipAddress.title = togglerModel.getIPAddressAsString()
         
         
     }

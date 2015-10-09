@@ -44,7 +44,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="AM4-De-1jS"/>
-                <menuItem title="Public IP address:" enabled="NO" id="Iqd-Ss-x68">
+                <menuItem title="current IP address:" enabled="NO" id="Iqd-Ss-x68">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem title="ipAddress" enabled="NO" id="ejW-ff-Irs">

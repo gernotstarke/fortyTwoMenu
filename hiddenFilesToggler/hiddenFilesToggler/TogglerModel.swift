@@ -13,8 +13,7 @@ class TogglerModel {
     
     var showAllFilesState = false
     
-    let statusOffIconName = "offStatusIcon"
-    let statusOnIconName  = "onStatusIcon"
+    let systemBarIconName = "systemBarIcon"
     
     
     let menuItemPrefix = "Toggle hidden files (currently:"
@@ -32,13 +31,6 @@ class TogglerModel {
     }
     
     
-    //
-    func currentIconName( currentState: Bool) -> String {
-        switch currentState {
-            case true: return statusOnIconName
-            case false: return statusOffIconName
-        }
-    }
     
     // uses the "default" application to determine the current state
     // as it takes rather long, we try to do it only once,
@@ -83,6 +75,7 @@ class TogglerModel {
     
     
     
+    
     func setShowAllFilesState() {
         let state: String
         
@@ -112,6 +105,28 @@ class TogglerModel {
  
     }
     
+    // uses the ipconfig program to get the current ip address,
+    // or "" if no lan/wlan is active
+    func getIPAddressAsString() -> String {
+        let task = NSTask()
+        task.launchPath = "/usr/sbin/ipconfig"
+        task.arguments = ["getifaddr", "en0"]
+        
+        let pipe = NSPipe()
+        task.standardOutput = pipe
+        
+        task.launch()
+        task.waitUntilExit()
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        var output: String = NSString(data: data, encoding: NSUTF8StringEncoding) as String!
+
+        if (output == "") {
+            output = "no ip address assigned"
+        }
+        
+        return output
+    }
     
     func setMenuItemText() {
         
