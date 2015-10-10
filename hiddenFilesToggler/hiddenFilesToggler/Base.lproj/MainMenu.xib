@@ -31,8 +31,18 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Hu2-2T-dyv"/>
-                <menuItem title="Top Memory Usage:" enabled="NO" id="miA-DR-PjN">
+                <menuItem title="Top Memory Usage" id="uOR-Mb-ugd">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Top Memory Usage" id="LVL-Ta-HUZ">
+                        <items>
+                            <menuItem title="Show Details " id="z0z-E9-Xab">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <action selector="memoryUsage:" target="Voe-Tx-rLC" id="5A0-D1-OLa"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="memory-1" enabled="NO" id="hxB-Bf-N5u">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -51,6 +61,14 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Ahs-pR-f3o"/>
+                <menuItem title="About..." id="r7z-R2-iLM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="8Nw-yw-gKj"/>
+                <menuItem title="Preferences..." id="GIi-WX-5wF">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="pHI-FL-o60"/>
                 <menuItem title="Quit" id="LK1-9L-JFV">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
