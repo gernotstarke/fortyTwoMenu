@@ -18,9 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var ipAddress: NSMenuItem!
    
-    @IBOutlet weak var memory_1: NSMenuItem!
-    @IBOutlet weak var memory_2: NSMenuItem!
-    @IBOutlet weak var memory_3: NSMenuItem!
+ 
+   
     
     var togglerModel = TogglerModel()
     
@@ -28,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
 
     
+    @IBOutlet weak var memoryUsageTable: NSMenuItem!
     // after app launched, do the following:
     // 1.) set icon to either on/off
     // 2.) set appropriate menu text
@@ -36,10 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         setIcon( togglerModel.showAllFilesState)
         
-        memory_1.title = "calculating..."
-        memory_2.title = "calculating..."
-        memory_3.title = "calculating..."
-        
+             
         ipAddress.title = togglerModel.getIPAddressAsString()
         
         
@@ -59,6 +56,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.image = icon
         statusItem.menu = statusMenu
     
+    }
+    
+    /**************
+    
+    **************/
+    @IBAction func memoryUsage(sender: NSMenuItem) {
     }
     
     // quit the application

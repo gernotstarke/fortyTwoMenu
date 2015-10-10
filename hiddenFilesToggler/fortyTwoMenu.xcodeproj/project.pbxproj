@@ -10,7 +10,6 @@
 		0C1035911BB83A2F00C97C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1035901BB83A2F00C97C57 /* AppDelegate.swift */; };
 		0C1035931BB83A2F00C97C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1035921BB83A2F00C97C57 /* Assets.xcassets */; };
 		0C1035961BB83A2F00C97C57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1035941BB83A2F00C97C57 /* MainMenu.xib */; };
-		0C1035AC1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1035AB1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift */; };
 		0C33EB9E1BB982A00009FEFF /* TogglerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C33EB9D1BB982A00009FEFF /* TogglerModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -32,15 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C10358D1BB83A2F00C97C57 /* hiddenFilesToggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiddenFilesToggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C10358D1BB83A2F00C97C57 /* fortyTwoMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fortyTwoMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1035901BB83A2F00C97C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C1035921BB83A2F00C97C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1035951BB83A2F00C97C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0C1035971BB83A2F00C97C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C10359C1BB83A2F00C97C57 /* hiddenFilesTogglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiddenFilesTogglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1035A71BB83A2F00C97C57 /* hiddenFilesTogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiddenFilesTogglerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C1035AB1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiddenFilesTogglerUITests.swift; sourceTree = "<group>"; };
-		0C1035AD1BB83A2F00C97C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C10359C1BB83A2F00C97C57 /* fortyTwoMenu.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortyTwoMenu.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1035A71BB83A2F00C97C57 /* fortyTwoMenu.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fortyTwoMenu.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C33EB9D1BB982A00009FEFF /* TogglerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TogglerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +69,7 @@
 		0C1035841BB83A2F00C97C57 = {
 			isa = PBXGroup;
 			children = (
-				0C10358F1BB83A2F00C97C57 /* hiddenFilesToggler */,
-				0C1035AA1BB83A2F00C97C57 /* hiddenFilesTogglerUITests */,
+				0C10358F1BB83A2F00C97C57 /* fortyTwoMenu */,
 				0C10358E1BB83A2F00C97C57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,14 +77,14 @@
 		0C10358E1BB83A2F00C97C57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C10358D1BB83A2F00C97C57 /* hiddenFilesToggler.app */,
-				0C10359C1BB83A2F00C97C57 /* hiddenFilesTogglerTests.xctest */,
-				0C1035A71BB83A2F00C97C57 /* hiddenFilesTogglerUITests.xctest */,
+				0C10358D1BB83A2F00C97C57 /* fortyTwoMenu.app */,
+				0C10359C1BB83A2F00C97C57 /* fortyTwoMenu.xctest */,
+				0C1035A71BB83A2F00C97C57 /* fortyTwoMenu.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C10358F1BB83A2F00C97C57 /* hiddenFilesToggler */ = {
+		0C10358F1BB83A2F00C97C57 /* fortyTwoMenu */ = {
 			isa = PBXGroup;
 			children = (
 				0C1035901BB83A2F00C97C57 /* AppDelegate.swift */,
@@ -97,24 +93,16 @@
 				0C33EB9D1BB982A00009FEFF /* TogglerModel.swift */,
 				0C1035971BB83A2F00C97C57 /* Info.plist */,
 			);
+			name = fortyTwoMenu;
 			path = hiddenFilesToggler;
-			sourceTree = "<group>";
-		};
-		0C1035AA1BB83A2F00C97C57 /* hiddenFilesTogglerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0C1035AB1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift */,
-				0C1035AD1BB83A2F00C97C57 /* Info.plist */,
-			);
-			path = hiddenFilesTogglerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C10358C1BB83A2F00C97C57 /* hiddenFilesToggler */ = {
+		0C10358C1BB83A2F00C97C57 /* fortyTwoMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1035B01BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesToggler" */;
+			buildConfigurationList = 0C1035B01BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenu" */;
 			buildPhases = (
 				0C1035891BB83A2F00C97C57 /* Sources */,
 				0C10358A1BB83A2F00C97C57 /* Frameworks */,
@@ -124,14 +112,14 @@
 			);
 			dependencies = (
 			);
-			name = hiddenFilesToggler;
+			name = fortyTwoMenu;
 			productName = hiddenFilesToggler;
-			productReference = 0C10358D1BB83A2F00C97C57 /* hiddenFilesToggler.app */;
+			productReference = 0C10358D1BB83A2F00C97C57 /* fortyTwoMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0C10359B1BB83A2F00C97C57 /* hiddenFilesTogglerTests */ = {
+		0C10359B1BB83A2F00C97C57 /* fortyTwoMenuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1035B31BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesTogglerTests" */;
+			buildConfigurationList = 0C1035B31BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenuTests" */;
 			buildPhases = (
 				0C1035981BB83A2F00C97C57 /* Sources */,
 				0C1035991BB83A2F00C97C57 /* Frameworks */,
@@ -142,14 +130,14 @@
 			dependencies = (
 				0C10359E1BB83A2F00C97C57 /* PBXTargetDependency */,
 			);
-			name = hiddenFilesTogglerTests;
+			name = fortyTwoMenuTests;
 			productName = hiddenFilesTogglerTests;
-			productReference = 0C10359C1BB83A2F00C97C57 /* hiddenFilesTogglerTests.xctest */;
+			productReference = 0C10359C1BB83A2F00C97C57 /* fortyTwoMenu.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0C1035A61BB83A2F00C97C57 /* hiddenFilesTogglerUITests */ = {
+		0C1035A61BB83A2F00C97C57 /* fortyTwoMenuUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1035B61BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesTogglerUITests" */;
+			buildConfigurationList = 0C1035B61BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenuUITests" */;
 			buildPhases = (
 				0C1035A31BB83A2F00C97C57 /* Sources */,
 				0C1035A41BB83A2F00C97C57 /* Frameworks */,
@@ -160,9 +148,9 @@
 			dependencies = (
 				0C1035A91BB83A2F00C97C57 /* PBXTargetDependency */,
 			);
-			name = hiddenFilesTogglerUITests;
+			name = fortyTwoMenuUITests;
 			productName = hiddenFilesTogglerUITests;
-			productReference = 0C1035A71BB83A2F00C97C57 /* hiddenFilesTogglerUITests.xctest */;
+			productReference = 0C1035A71BB83A2F00C97C57 /* fortyTwoMenu.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C1035881BB83A2F00C97C57 /* Build configuration list for PBXProject "hiddenFilesToggler" */;
+			buildConfigurationList = 0C1035881BB83A2F00C97C57 /* Build configuration list for PBXProject "fortyTwoMenu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -200,9 +188,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C10358C1BB83A2F00C97C57 /* hiddenFilesToggler */,
-				0C10359B1BB83A2F00C97C57 /* hiddenFilesTogglerTests */,
-				0C1035A61BB83A2F00C97C57 /* hiddenFilesTogglerUITests */,
+				0C10358C1BB83A2F00C97C57 /* fortyTwoMenu */,
+				0C10359B1BB83A2F00C97C57 /* fortyTwoMenuTests */,
+				0C1035A61BB83A2F00C97C57 /* fortyTwoMenuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1035AC1BB83A2F00C97C57 /* hiddenFilesTogglerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,12 +250,12 @@
 /* Begin PBXTargetDependency section */
 		0C10359E1BB83A2F00C97C57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C10358C1BB83A2F00C97C57 /* hiddenFilesToggler */;
+			target = 0C10358C1BB83A2F00C97C57 /* fortyTwoMenu */;
 			targetProxy = 0C10359D1BB83A2F00C97C57 /* PBXContainerItemProxy */;
 		};
 		0C1035A91BB83A2F00C97C57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0C10358C1BB83A2F00C97C57 /* hiddenFilesToggler */;
+			target = 0C10358C1BB83A2F00C97C57 /* fortyTwoMenu */;
 			targetProxy = 0C1035A81BB83A2F00C97C57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -372,8 +359,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = hiddenFilesToggler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesToggler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.arc42.fortyTwoMenu;
+				PRODUCT_NAME = fortyTwoMenu;
 			};
 			name = Debug;
 		};
@@ -384,8 +371,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = hiddenFilesToggler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesToggler;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.arc42.fortyTwoMenu;
+				PRODUCT_NAME = fortyTwoMenu;
 			};
 			name = Release;
 		};
@@ -397,8 +384,8 @@
 				INFOPLIST_FILE = hiddenFilesTogglerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesTogglerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiddenFilesToggler.app/Contents/MacOS/hiddenFilesToggler";
+				PRODUCT_NAME = fortyTwoMenu;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortyTwoMenu.app/Contents/MacOS/fortyTwoMenu";
 			};
 			name = Debug;
 		};
@@ -410,8 +397,8 @@
 				INFOPLIST_FILE = hiddenFilesTogglerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesTogglerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiddenFilesToggler.app/Contents/MacOS/hiddenFilesToggler";
+				PRODUCT_NAME = fortyTwoMenu;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fortyTwoMenu.app/Contents/MacOS/fortyTwoMenu";
 			};
 			name = Release;
 		};
@@ -422,7 +409,7 @@
 				INFOPLIST_FILE = hiddenFilesTogglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesTogglerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fortyTwoMenu;
 				TEST_TARGET_NAME = hiddenFilesToggler;
 				USES_XCTRUNNER = YES;
 			};
@@ -435,7 +422,7 @@
 				INFOPLIST_FILE = hiddenFilesTogglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.gs.hiddenFilesTogglerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fortyTwoMenu;
 				TEST_TARGET_NAME = hiddenFilesToggler;
 				USES_XCTRUNNER = YES;
 			};
@@ -444,7 +431,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C1035881BB83A2F00C97C57 /* Build configuration list for PBXProject "hiddenFilesToggler" */ = {
+		0C1035881BB83A2F00C97C57 /* Build configuration list for PBXProject "fortyTwoMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1035AE1BB83A2F00C97C57 /* Debug */,
@@ -453,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C1035B01BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesToggler" */ = {
+		0C1035B01BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1035B11BB83A2F00C97C57 /* Debug */,
@@ -462,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C1035B31BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesTogglerTests" */ = {
+		0C1035B31BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1035B41BB83A2F00C97C57 /* Debug */,
@@ -471,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C1035B61BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "hiddenFilesTogglerUITests" */ = {
+		0C1035B61BB83A2F00C97C57 /* Build configuration list for PBXNativeTarget "fortyTwoMenuUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C1035B71BB83A2F00C97C57 /* Debug */,
