@@ -1,9 +1,18 @@
-# hiddenFilesToggler
-show/hide hidden files - as menubar application for Mac OS 10.
+# fortyTwo-Menu
+A little menubar application for Mac OS 10 to:
 
-Thanx to the great swift/cocoa tutorial by 
-[Lee Brimelow](http://www.swiftvideotutorials.com/creating-menubar-apps-osx "SwiftVideoTutorials.com").
+* toggle visibility of hidden files
+* display the most memory-consuming active applications
+* basic info on current network status
 
-All rights are his - all errors are mine.
+
+Thanx to the great swift/cocoa tutorials by 
+* [Lee Brimelow](http://www.swiftvideotutorials.com/creating-menubar-apps-osx "SwiftVideoTutorials.com").
+* [Brad Greenlee](http://footle.org/WeatherBar/)
+
+
+This app might not be ready for production use - no guarantees whatsoever.
+
+All errors are mine...
 
 
