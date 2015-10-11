@@ -12,6 +12,7 @@
 		0C4A29821BC9684400414C14 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A29801BC9684400414C14 /* MainMenu.xib */; };
 		0C4A298D1BC9684400414C14 /* fortyTwo_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A298C1BC9684400414C14 /* fortyTwo_MenuTests.swift */; };
 		0C5C14BF1BC99A71006E0CBB /* MemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C14BE1BC99A71006E0CBB /* MemoryModel.swift */; settings = {ASSET_TAGS = (); }; };
+		0C5C14C11BC99F03006E0CBB /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		0C5C14BC1BC99A02006E0CBB /* AppDelegate-old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate-old.swift"; sourceTree = "<group>"; };
 		0C5C14BD1BC99A13006E0CBB /* TogglerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglerModel.swift; sourceTree = "<group>"; };
 		0C5C14BE1BC99A71006E0CBB /* MemoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryModel.swift; sourceTree = "<group>"; };
+		0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				0C4A297E1BC9684400414C14 /* Assets.xcassets */,
 				0C4A29801BC9684400414C14 /* MainMenu.xib */,
 				0C4A29831BC9684400414C14 /* Info.plist */,
+				0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */,
 			);
 			path = "fortyTwo-Menu";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5C14C11BC99F03006E0CBB /* StatusMenuController.swift in Sources */,
 				0C5C14BF1BC99A71006E0CBB /* MemoryModel.swift in Sources */,
 				0C4A297D1BC9684400414C14 /* AppDelegate.swift in Sources */,
 			);
