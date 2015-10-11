@@ -1,5 +1,5 @@
 //
-//  MemoryModel.swift
+//  RunningApplication.swift
 //  fortyTwo-Menu
 //
 //  Created by Dr. Gernot Starke on 11.10.15.
