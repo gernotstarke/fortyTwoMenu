@@ -15,6 +15,7 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="cKH-0M-Esv" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="fortyTwo_Menu" customModuleProvider="target">
             <connections>
+                <outlet property="aboutView" destination="OGu-gy-s4X" id="PYm-9L-lCp"/>
                 <outlet property="statusMenu" destination="pQB-hb-pwK" id="Iph-jp-nFD"/>
             </connections>
         </customObject>
@@ -50,7 +51,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Osp-Ie-WEl"/>
-                <menuItem title="About..." id="fPM-r0-aiO">
+                <menuItem title="about" id="j14-Ky-0ef">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qqH-nu-jNO"/>
@@ -61,7 +62,33 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-361.5" y="212.5"/>
+            <point key="canvasLocation" x="-416.5" y="117.5"/>
         </menu>
+        <customView id="OGu-gy-s4X" customClass="AboutView" customModule="fortyTwo_Menu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M1n-Hs-9Rc">
+                    <rect key="frame" x="186" y="4" width="57" height="28"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="of1-Wy-dnM"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-KS-daP">
+                    <rect key="frame" x="-2" y="7" width="156" height="23"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="about" id="HuZ-Dn-7N2">
+                        <font key="font" size="14" name=".HelveticaNeueDeskInterface-Regular"/>
+                        <color key="textColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="aboutLabel" destination="2L0-KS-daP" id="fn8-kX-evh"/>
+                <outlet property="arc42Logo" destination="M1n-Hs-9Rc" id="pwR-jG-ePk"/>
+            </connections>
+            <point key="canvasLocation" x="-366.5" y="320.5"/>
+        </customView>
+        <menuItem title="Item" id="WlF-l5-ocv">
+            <modifierMask key="keyEquivalentModifierMask"/>
+        </menuItem>
     </objects>
 </document>

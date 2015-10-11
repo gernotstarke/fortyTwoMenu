@@ -13,6 +13,9 @@ class StatusMenuController: NSObject {
 
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1) // NSVariableStatusItemLength
  
+    var aboutMenuItem: NSMenuItem!
+    
+    @IBOutlet weak var aboutView: AboutView!
     
     // quit the app
     // ************
@@ -20,9 +23,15 @@ class StatusMenuController: NSObject {
         NSApplication.sharedApplication().terminate(self)
     }
     
+    
+    
     override func awakeFromNib() {
         statusItem.menu = statusMenu
         setIcon()
+        
+        aboutMenuItem = statusMenu.itemWithTitle("about")
+        aboutMenuItem.view = aboutView
+        aboutView.setArc42Logo()
     }
     
     
