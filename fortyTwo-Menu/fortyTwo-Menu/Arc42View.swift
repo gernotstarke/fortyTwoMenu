@@ -1,5 +1,5 @@
 //
-//  AboutView.swift
+//  Arc42View.swift
 //  fortyTwo-Menu
 //
 //  Created by Dr. Gernot Starke on 11.10.15.
@@ -8,14 +8,16 @@
 
 import Cocoa
 
-class AboutView: NSView {
-    @IBOutlet weak var aboutLabel: NSTextField!
-
+class Arc42View: NSView {
+    
     @IBOutlet weak var arc42Logo: NSImageView!
     
     func setArc42Logo() {
         arc42Logo.image = NSImage( named: "arc42logo")
     }
     
+    @IBAction func helpAction(sender: NSButton) {
+        NSLog("help button has been pressed")
+    }
     
 }

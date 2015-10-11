@@ -15,12 +15,20 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="cKH-0M-Esv" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="fortyTwo_Menu" customModuleProvider="target">
             <connections>
-                <outlet property="aboutView" destination="OGu-gy-s4X" id="PYm-9L-lCp"/>
+                <outlet property="arc42MenuItem" destination="OGu-gy-s4X" id="4HK-54-Cea"/>
+                <outlet property="arc42View" destination="OGu-gy-s4X" id="I7L-34-LMo"/>
                 <outlet property="statusMenu" destination="pQB-hb-pwK" id="Iph-jp-nFD"/>
             </connections>
         </customObject>
         <menu id="pQB-hb-pwK">
             <items>
+                <menuItem title="arc42" keyEquivalent="4" id="KNS-wN-Hig">
+                    <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                </menuItem>
+                <menuItem title="Help" id="Rr7-ah-T6n">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="Osp-Ie-WEl"/>
                 <menuItem title="show/hide hidden files" id="ByY-jh-aA3">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
@@ -47,16 +55,13 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Tvh-Yc-YDm"/>
-                <menuItem title="Preferences..." id="HCk-bo-R34">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="Osp-Ie-WEl"/>
-                <menuItem title="about" id="j14-Ky-0ef">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Preferences..." keyEquivalent="," id="HCk-bo-R34">
+                    <connections>
+                        <action selector="preferencesAction:" target="cKH-0M-Esv" id="fJU-Zk-hpW"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qqH-nu-jNO"/>
-                <menuItem title="Quit" id="UGc-yA-w7P">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Quit" keyEquivalent="q" id="UGc-yA-w7P">
                     <connections>
                         <action selector="quitAction:" target="cKH-0M-Esv" id="6s2-Hj-znk"/>
                     </connections>
@@ -64,31 +69,19 @@
             </items>
             <point key="canvasLocation" x="-416.5" y="117.5"/>
         </menu>
-        <customView id="OGu-gy-s4X" customClass="AboutView" customModule="fortyTwo_Menu" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="253" height="37"/>
+        <customView id="OGu-gy-s4X" userLabel="Arc42View" customClass="Arc42View" customModule="fortyTwo_Menu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="37"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M1n-Hs-9Rc">
-                    <rect key="frame" x="186" y="4" width="57" height="28"/>
+                    <rect key="frame" x="5" y="4" width="57" height="28"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="of1-Wy-dnM"/>
                 </imageView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-KS-daP">
-                    <rect key="frame" x="-2" y="7" width="156" height="23"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="about" id="HuZ-Dn-7N2">
-                        <font key="font" size="14" name=".HelveticaNeueDeskInterface-Regular"/>
-                        <color key="textColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
             <connections>
-                <outlet property="aboutLabel" destination="2L0-KS-daP" id="fn8-kX-evh"/>
-                <outlet property="arc42Logo" destination="M1n-Hs-9Rc" id="pwR-jG-ePk"/>
+                <outlet property="arc42Logo" destination="M1n-Hs-9Rc" id="23W-h6-ER4"/>
             </connections>
-            <point key="canvasLocation" x="-366.5" y="320.5"/>
+            <point key="canvasLocation" x="-424.5" y="319.5"/>
         </customView>
-        <menuItem title="Item" id="WlF-l5-ocv">
-            <modifierMask key="keyEquivalentModifierMask"/>
-        </menuItem>
     </objects>
 </document>

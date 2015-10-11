@@ -13,9 +13,17 @@ class StatusMenuController: NSObject {
 
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1) // NSVariableStatusItemLength
  
-    var aboutMenuItem: NSMenuItem!
     
-    @IBOutlet weak var aboutView: AboutView!
+    // arc42 logo is displayed in a custom-View.
+    @IBOutlet weak var arc42View: Arc42View!
+    var arc42MenuItem: NSMenuItem!
+    
+    
+
+    
+    // preferences ...
+    @IBAction func preferencesAction(sender: NSMenuItem) {
+    }
     
     // quit the app
     // ************
@@ -24,25 +32,22 @@ class StatusMenuController: NSObject {
     }
     
     
-    
     override func awakeFromNib() {
         statusItem.menu = statusMenu
         setIcon()
         
-        aboutMenuItem = statusMenu.itemWithTitle("about")
-        aboutMenuItem.view = aboutView
-        aboutView.setArc42Logo()
+        arc42MenuItem = statusMenu.itemWithTitle("arc42")
+        arc42MenuItem.view = arc42View
+        arc42View.setArc42Logo()
     }
     
     
     /**************
-    set icon
+    set menu bar icon
     ***************/
     func setIcon(  ) {
-        
         let icon = NSImage(named: "menu42Icon")
         icon?.template = false
-        
         
         statusItem.image = icon
         statusItem.menu = statusMenu
