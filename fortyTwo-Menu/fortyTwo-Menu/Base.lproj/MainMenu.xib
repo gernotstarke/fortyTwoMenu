@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="arc42MenuItem" destination="OGu-gy-s4X" id="4HK-54-Cea"/>
                 <outlet property="arc42View" destination="OGu-gy-s4X" id="I7L-34-LMo"/>
+                <outlet property="currentIPAddress" destination="dKO-Ip-IgC" id="Bwl-fA-YGg"/>
                 <outlet property="statusMenu" destination="pQB-hb-pwK" id="Iph-jp-nFD"/>
             </connections>
         </customObject>

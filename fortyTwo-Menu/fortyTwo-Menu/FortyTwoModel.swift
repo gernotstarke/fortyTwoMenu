@@ -1,5 +1,5 @@
 //
-//  MemoryModel.swift
+//  FortyTwoModel.swift
 //  fortyTwo-Menu
 //
 //  Created by Dr. Gernot Starke on 10.10.15.
@@ -8,6 +8,17 @@
 
 import Foundation
 
-class MemoryModel {
+
+class FortyTwoModel {
+    
+    let networkModel = NetworkModel()
+    let memoryModel = MemoryModel()
+    
+    
+    func getCurrentIPAddress() -> String {
+        return networkModel.getIPAddressAsString()
+    }
+    
+    
     
 }

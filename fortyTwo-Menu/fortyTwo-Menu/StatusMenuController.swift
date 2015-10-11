@@ -10,20 +10,27 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
+    
+    let fortyTwoModel: FortyTwoModel
 
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1) // NSVariableStatusItemLength
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
  
+    override init() {
+        fortyTwoModel = FortyTwoModel()
+    }
     
     // arc42 logo is displayed in a custom-View.
     @IBOutlet weak var arc42View: Arc42View!
     var arc42MenuItem: NSMenuItem!
     
     
+    @IBOutlet weak var currentIPAddress: NSMenuItem!
 
     
     // preferences ...
     @IBAction func preferencesAction(sender: NSMenuItem) {
     }
+    
     
     // quit the app
     // ************
@@ -39,6 +46,9 @@ class StatusMenuController: NSObject {
         arc42MenuItem = statusMenu.itemWithTitle("arc42")
         arc42MenuItem.view = arc42View
         arc42View.setArc42Logo()
+        
+        setCurrentIPAddress()
+        
     }
     
     
@@ -51,7 +61,12 @@ class StatusMenuController: NSObject {
         
         statusItem.image = icon
         statusItem.menu = statusMenu
-        
     }
 
+    /*************
+    set current IP address
+    *************/
+    func setCurrentIPAddress() {
+        currentIPAddress.title = fortyTwoModel.getCurrentIPAddress()
+    }
 }

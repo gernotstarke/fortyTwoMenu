@@ -11,6 +11,10 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    var fortyTwoModel = FortyTwoModel()
+    
+    
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
             }
 
