@@ -14,6 +14,8 @@
 		0C5C14BF1BC99A71006E0CBB /* FortyTwoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C14BE1BC99A71006E0CBB /* FortyTwoModel.swift */; settings = {ASSET_TAGS = (); }; };
 		0C5C14C11BC99F03006E0CBB /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		0C5C14C51BCA2F00006E0CBB /* Arc42View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C14C41BCA2F00006E0CBB /* Arc42View.swift */; settings = {ASSET_TAGS = (); }; };
+		0CB8E4DA1BCC37E9005FD545 /* ActiveApplicationsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8E4D81BCC37E9005FD545 /* ActiveApplicationsWindow.swift */; settings = {ASSET_TAGS = (); }; };
+		0CB8E4DB1BCC37E9005FD545 /* ActiveApplicationsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB8E4D91BCC37E9005FD545 /* ActiveApplicationsWindow.xib */; settings = {ASSET_TAGS = (); }; };
 		0CDEEA251BCA839500D60DCB /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDEEA241BCA839500D60DCB /* NetworkModel.swift */; settings = {ASSET_TAGS = (); }; };
 		0CDEEA291BCA862D00D60DCB /* RunningApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDEEA281BCA862D00D60DCB /* RunningApplication.swift */; settings = {ASSET_TAGS = (); }; };
 		0CDEEA2B1BCAB6CC00D60DCB /* MemoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDEEA2A1BCAB6CC00D60DCB /* MemoryModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -43,6 +45,8 @@
 		0C5C14BE1BC99A71006E0CBB /* FortyTwoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortyTwoModel.swift; sourceTree = "<group>"; };
 		0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		0C5C14C41BCA2F00006E0CBB /* Arc42View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arc42View.swift; sourceTree = "<group>"; };
+		0CB8E4D81BCC37E9005FD545 /* ActiveApplicationsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveApplicationsWindow.swift; path = ../ActiveApplicationsWindow.swift; sourceTree = "<group>"; };
+		0CB8E4D91BCC37E9005FD545 /* ActiveApplicationsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActiveApplicationsWindow.xib; path = ../ActiveApplicationsWindow.xib; sourceTree = "<group>"; };
 		0CDEEA241BCA839500D60DCB /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		0CDEEA281BCA862D00D60DCB /* RunningApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningApplication.swift; sourceTree = "<group>"; };
 		0CDEEA2A1BCAB6CC00D60DCB /* MemoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryModel.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		0CDEEA271BCA85CA00D60DCB /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				0CB8E4D81BCC37E9005FD545 /* ActiveApplicationsWindow.swift */,
+				0CB8E4D91BCC37E9005FD545 /* ActiveApplicationsWindow.xib */,
 				0C4A297C1BC9684400414C14 /* AppDelegate.swift */,
 				0C5C14C01BC99F03006E0CBB /* StatusMenuController.swift */,
 				0C4A29801BC9684400414C14 /* MainMenu.xib */,
@@ -218,6 +224,7 @@
 			files = (
 				0C4A297F1BC9684400414C14 /* Assets.xcassets in Resources */,
 				0C4A29821BC9684400414C14 /* MainMenu.xib in Resources */,
+				0CB8E4DB1BCC37E9005FD545 /* ActiveApplicationsWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +246,7 @@
 				0C5C14C51BCA2F00006E0CBB /* Arc42View.swift in Sources */,
 				0C5C14C11BC99F03006E0CBB /* StatusMenuController.swift in Sources */,
 				0C5C14BF1BC99A71006E0CBB /* FortyTwoModel.swift in Sources */,
+				0CB8E4DA1BCC37E9005FD545 /* ActiveApplicationsWindow.swift in Sources */,
 				0CDEEA251BCA839500D60DCB /* NetworkModel.swift in Sources */,
 				0C4A297D1BC9684400414C14 /* AppDelegate.swift in Sources */,
 				0CDEEA2B1BCAB6CC00D60DCB /* MemoryModel.swift in Sources */,

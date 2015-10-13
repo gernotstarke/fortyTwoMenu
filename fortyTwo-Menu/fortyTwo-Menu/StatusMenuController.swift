@@ -23,7 +23,12 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var arc42View: Arc42View!
     var arc42MenuItem: NSMenuItem!
     
+    @IBAction func memoryConsumptionAction(sender: NSMenuItem) {
+        
+    }
     
+    
+    // Current IP address
     @IBOutlet weak var currentIPAddress: NSMenuItem!
 
     
@@ -43,11 +48,18 @@ class StatusMenuController: NSObject {
         statusItem.menu = statusMenu
         setIcon()
         
+        // ******* arc42 logo  ***********
         arc42MenuItem = statusMenu.itemWithTitle("arc42")
         arc42MenuItem.view = arc42View
         arc42View.setArc42Logo()
         
+        // ******* memory consumption table ***********
+        //memoryConsumptionMenuItem = statusMenu.itemWithTitle("memoryConsumptionTable")
+        //memoryConsumptionMenuItem.view = memoryConsumptionView
+        
+        // ******* IP and network stuff ***********
         setCurrentIPAddress()
+    
         
     }
     
@@ -69,4 +81,6 @@ class StatusMenuController: NSObject {
     func setCurrentIPAddress() {
         currentIPAddress.title = fortyTwoModel.getCurrentIPAddress()
     }
+    
+    
 }

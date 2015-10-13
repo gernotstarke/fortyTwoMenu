@@ -16,8 +16,6 @@ class Arc42View: NSView {
         arc42Logo.image = NSImage( named: "arc42logo")
     }
     
-    @IBAction func helpAction(sender: NSButton) {
-        NSLog("help button has been pressed")
-    }
+
     
 }

@@ -26,7 +26,8 @@
                 <menuItem title="arc42" keyEquivalent="4" id="KNS-wN-Hig">
                     <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                 </menuItem>
-                <menuItem title="Help" id="Rr7-ah-T6n">
+                <menuItem isSeparatorItem="YES" id="NE0-eM-smK"/>
+                <menuItem title="Help" enabled="NO" id="Rr7-ah-T6n">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Osp-Ie-WEl"/>
@@ -34,6 +35,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Mw5-SZ-x9b"/>
+                <menuItem title="Memory Consumption" id="8RC-7Y-btC">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="memoryConsumptionAction:" target="cKH-0M-Esv" id="Pnn-Wh-OCd"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Memory Consumption (details)" id="oqc-s1-D8M">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Memory Consumption (details)" id="U6C-Gd-lqf">
@@ -44,15 +51,12 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="calculating..." enabled="NO" id="NdU-gw-wuH">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
                 <menuItem isSeparatorItem="YES" id="Oh1-xo-y4A"/>
-                <menuItem title="Current IP address:" enabled="NO" id="R7s-Nq-f2B">
+                <menuItem title="Current IP address:" id="R7s-Nq-f2B">
                     <attributedString key="attributedTitle"/>
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="currently unknown" enabled="NO" id="dKO-Ip-IgC">
+                <menuItem title="currently unknown" id="dKO-Ip-IgC">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Tvh-Yc-YDm"/>
@@ -68,7 +72,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-416.5" y="117.5"/>
+            <point key="canvasLocation" x="-417.5" y="75.5"/>
         </menu>
         <customView id="OGu-gy-s4X" userLabel="Arc42View" customClass="Arc42View" customModule="fortyTwo_Menu" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="199" height="37"/>
@@ -82,7 +86,7 @@
             <connections>
                 <outlet property="arc42Logo" destination="M1n-Hs-9Rc" id="23W-h6-ER4"/>
             </connections>
-            <point key="canvasLocation" x="-424.5" y="319.5"/>
+            <point key="canvasLocation" x="-435.5" y="262.5"/>
         </customView>
     </objects>
 </document>
