@@ -33,7 +33,7 @@
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="appNameIcon" width="129" minWidth="40" maxWidth="1000" id="dQY-0G-AE4">
+                                        <tableColumn identifier="appNameAndIcon" width="129" minWidth="40" maxWidth="1000" id="dQY-0G-AE4" userLabel="appNameAndIcon">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -102,6 +102,10 @@
                                             </prototypeCellViews>
                                         </tableColumn>
                                     </tableColumns>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-2" id="rMN-pV-yrc"/>
+                                        <outlet property="delegate" destination="-2" id="rwN-al-Q3H"/>
+                                    </connections>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
