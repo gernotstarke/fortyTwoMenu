@@ -10,28 +10,16 @@ import Cocoa
 
 class ActiveApplicationsWindow: NSWindowController  {
 
-    var runningApplications: [RunningApplication]
+    var runningApplications: [RunningApplication]?
     
-    init(windowNibName: String ) {
-        
-        super.init( windowNibName: "ActiveApplicationsWindow")
-        
-        let ra1 = RunningApplication(name: "Firefox", icon: nil, memoryUsed: 10011)
-        let ra2 = RunningApplication(name: "IntelliJ", icon: nil, memoryUsed: 20043 )
-        self.runningApplications = [ra1, ra2]
-    }
-    
-    override init(window: NSWindow!)
-    {
-        super.init(window: window)
-    }
-    
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        fatalError("init(coder:) has not been implemented")
-    }
+//    init() {
+//        
+//        let ra1 = RunningApplication(name: "Firefox", icon: nil, memoryUsed: 10011)
+//        let ra2 = RunningApplication(name: "IntelliJ", icon: nil, memoryUsed: 20043 )
+//        self.runningApplications = [ra1, ra2]
+//    }
 
+    
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -55,7 +43,7 @@ class ActiveApplicationsWindow: NSWindowController  {
         
         // should be
         func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
-            return self.runningApplications.count
+            return self.runningApplications!.count
         }
         
         func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
@@ -63,7 +51,7 @@ class ActiveApplicationsWindow: NSWindowController  {
             tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
         
             if (tableColumn?.identifier == "appNameAndIcon") {
-                let applicationInfo = self.runningApplications[row]
+                let applicationInfo = self.runningApplications![row]
             
                 cellView.imageView!.image = applicationInfo.icon
                 cellView.textField!.stringValue = applicationInfo.name
