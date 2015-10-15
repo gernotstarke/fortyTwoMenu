@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ActiveApplicationsWindow: NSWindowController  {
+class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
 
     var runningApplications: [RunningApplication]?
     
@@ -47,6 +47,9 @@ class ActiveApplicationsWindow: NSWindowController  {
         }
         
         func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+            
+            NSLog("func tableView called for row \(row)")
+            
             let cellView: NSTableCellView =
             tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
         

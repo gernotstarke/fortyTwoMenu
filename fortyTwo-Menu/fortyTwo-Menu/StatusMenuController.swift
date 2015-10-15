@@ -11,12 +11,18 @@ import Cocoa
 class StatusMenuController: NSObject {
     @IBOutlet weak var statusMenu: NSMenu!
     
+    var appMemoryWindow: ActiveApplicationsWindow!
+    
     let fortyTwoModel: FortyTwoModel
 
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
  
     override init() {
         fortyTwoModel = FortyTwoModel()
+        
+        
+        appMemoryWindow = ActiveApplicationsWindow()
+        appMemoryWindow.delegate = self
     }
     
     // arc42 logo is displayed in a custom-View.
@@ -24,6 +30,7 @@ class StatusMenuController: NSObject {
     var arc42MenuItem: NSMenuItem!
     
     @IBAction func memoryConsumptionAction(sender: NSMenuItem) {
+        
         
     }
     
