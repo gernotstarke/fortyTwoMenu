@@ -8,18 +8,27 @@
 
 import Cocoa
 
+protocol ActiveAppicationsWindowDelegate {
+    func getActiveApplications()
+}
+
+
 class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
+
+    var delegate: ActiveAppicationsWindowDelegate?
 
     var runningApplications: [RunningApplication]?
     
 //    init() {
-//        
 //        let ra1 = RunningApplication(name: "Firefox", icon: nil, memoryUsed: 10011)
 //        let ra2 = RunningApplication(name: "IntelliJ", icon: nil, memoryUsed: 20043 )
 //        self.runningApplications = [ra1, ra2]
 //    }
 
     
+    @IBAction func closeAppWindowAction(sender: NSButton) {
+        self.close()
+    }
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -34,17 +43,19 @@ class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
     }
     
     override var windowNibName : String! {
-        return "Active Applications and their Memory Usage"
+        return "ActiveApplicationsWindow"
     }
     
 }
 
     extension ActiveApplicationsWindow: NSTableViewDataSource {
         
-        // should be
+        
         func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
-            return self.runningApplications!.count
+            return 0
+            //return self.runningApplications!.count
         }
+        
         
         func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
             

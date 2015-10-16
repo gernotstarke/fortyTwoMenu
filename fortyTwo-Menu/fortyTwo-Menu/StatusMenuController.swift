@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class StatusMenuController: NSObject {
+class StatusMenuController: NSObject, ActiveAppicationsWindowDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     
     var appMemoryWindow: ActiveApplicationsWindow!
@@ -20,18 +20,23 @@ class StatusMenuController: NSObject {
     override init() {
         fortyTwoModel = FortyTwoModel()
         
-        
-        appMemoryWindow = ActiveApplicationsWindow()
-        appMemoryWindow.delegate = self
     }
     
     // arc42 logo is displayed in a custom-View.
     @IBOutlet weak var arc42View: Arc42View!
     var arc42MenuItem: NSMenuItem!
     
+    
     @IBAction func memoryConsumptionAction(sender: NSMenuItem) {
+       appMemoryWindow.showWindow(nil)
         
-        
+    }
+    
+    /**************************
+    get list of active applications
+    **************************/
+    func getActiveApplications() {
+        NSLog("getActiveApplications() called...")
     }
     
     
@@ -55,6 +60,8 @@ class StatusMenuController: NSObject {
         statusItem.menu = statusMenu
         setIcon()
         
+        // ******* fortyTwo Model instance *******
+        
         // ******* arc42 logo  ***********
         arc42MenuItem = statusMenu.itemWithTitle("arc42")
         arc42MenuItem.view = arc42View
@@ -64,11 +71,15 @@ class StatusMenuController: NSObject {
         //memoryConsumptionMenuItem = statusMenu.itemWithTitle("memoryConsumptionTable")
         //memoryConsumptionMenuItem.view = memoryConsumptionView
         
+        appMemoryWindow = ActiveApplicationsWindow()
+        appMemoryWindow.delegate = self
+        
         // ******* IP and network stuff ***********
         setCurrentIPAddress()
     
         
     }
+    
     
     
     /**************

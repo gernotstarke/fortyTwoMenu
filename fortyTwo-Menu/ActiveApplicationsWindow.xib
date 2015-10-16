@@ -21,13 +21,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-3E-V0F">
-                        <rect key="frame" x="-1" y="165" width="409" height="135"/>
+                        <rect key="frame" x="-1" y="96" width="409" height="204"/>
                         <clipView key="contentView" ambiguous="YES" id="wjf-zZ-Ojw">
-                            <rect key="frame" x="0.0" y="17" width="409" height="118"/>
+                            <rect key="frame" x="0.0" y="17" width="409" height="187"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="UDt-DA-02Z" viewBased="YES" id="emh-LL-Rlg">
-                                    <rect key="frame" x="0.0" y="0.0" width="422" height="118"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="422" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -111,7 +111,7 @@
                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
                         <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="3sj-AP-GoI">
-                            <rect key="frame" x="0.0" y="119" width="409" height="16"/>
+                            <rect key="frame" x="0.0" y="188" width="409" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="cUL-I8-qEj">
@@ -123,6 +123,16 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-eZ-Uld">
+                        <rect key="frame" x="165" y="13" width="76" height="32"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IUf-50-hmV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeAppWindowAction:" target="-2" id="ob2-ol-wFN"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>

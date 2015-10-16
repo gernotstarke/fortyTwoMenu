@@ -14,6 +14,7 @@ class FortyTwoModel {
     let networkModel = NetworkModel()
     let memoryModel = MemoryModel()
     
+   
     
     func getCurrentIPAddress() -> String {
         return networkModel.getIPAddressAsString()
