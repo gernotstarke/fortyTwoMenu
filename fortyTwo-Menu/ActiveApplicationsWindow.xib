@@ -14,26 +14,36 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="407" height="300"/>
+            <rect key="contentRect" x="196" y="240" width="428" height="300"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="407" height="300"/>
+                <rect key="frame" x="0.0" y="0.0" width="428" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-3E-V0F">
-                        <rect key="frame" x="-1" y="96" width="409" height="204"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-eZ-Uld">
+                        <rect key="frame" x="165" y="13" width="76" height="32"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IUf-50-hmV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeAppWindowAction:" target="-2" id="ob2-ol-wFN"/>
+                        </connections>
+                    </button>
+                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="41" horizontalPageScroll="10" verticalLineScroll="41" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-3E-V0F">
+                        <rect key="frame" x="0.0" y="96" width="409" height="204"/>
                         <clipView key="contentView" ambiguous="YES" id="wjf-zZ-Ojw">
                             <rect key="frame" x="0.0" y="17" width="409" height="187"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="UDt-DA-02Z" viewBased="YES" id="emh-LL-Rlg">
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="39" rowSizeStyle="automatic" headerView="UDt-DA-02Z" viewBased="YES" id="emh-LL-Rlg">
                                     <rect key="frame" x="0.0" y="0.0" width="422" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="appNameAndIcon" width="129" minWidth="40" maxWidth="1000" id="dQY-0G-AE4" userLabel="appNameAndIcon">
+                                        <tableColumn identifier="appNameAndIcon" width="150" minWidth="40" maxWidth="1000" id="dQY-0G-AE4" userLabel="appNameAndIcon">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -47,7 +57,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="appNameAndIcon" id="Y5Y-aD-xth">
-                                                    <rect key="frame" x="1" y="1" width="129" height="39"/>
+                                                    <rect key="frame" x="1" y="1" width="150" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAt-Us-GyJ">
@@ -55,7 +65,7 @@
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" identifier="appIcon" imageScaling="proportionallyDown" image="NSActionTemplate" id="RvI-dJ-4W4" userLabel="appIcon"/>
                                                         </imageView>
                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3W-kJ-v8w">
-                                                            <rect key="frame" x="33" y="9" width="91" height="22"/>
+                                                            <rect key="frame" x="33" y="3" width="91" height="28"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="appName" title="AppName" id="R0q-Af-GA9" userLabel="appName">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -70,7 +80,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="appCurrentMemory" width="287" minWidth="40" maxWidth="1000" id="FRO-xR-7O2">
+                                        <tableColumn identifier="appCurrentMemory" width="266" minWidth="40" maxWidth="1000" id="FRO-xR-7O2">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -84,14 +94,14 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView id="uEk-yC-sWF">
-                                                    <rect key="frame" x="133" y="1" width="287" height="17"/>
+                                                    <rect key="frame" x="154" y="1" width="266" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <connections>
                                                         <outlet property="textField" destination="m5V-xL-kS6" id="qk4-C7-2WC"/>
                                                     </connections>
                                                 </tableCellView>
                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="m5V-xL-kS6">
-                                                    <rect key="frame" x="133" y="20" width="287" height="17"/>
+                                                    <rect key="frame" x="154" y="20" width="266" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="AppCurrentMemory" id="eQv-IQ-fnt">
                                                         <font key="font" metaFont="system"/>
@@ -118,27 +128,17 @@
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <tableHeaderView key="headerView" id="UDt-DA-02Z">
+                        <tableHeaderView key="headerView" hidden="YES" autoresizesSubviews="NO" focusRingType="none" id="UDt-DA-02Z">
                             <rect key="frame" x="0.0" y="0.0" width="422" height="17"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-eZ-Uld">
-                        <rect key="frame" x="165" y="13" width="76" height="32"/>
-                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IUf-50-hmV">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="closeAppWindowAction:" target="-2" id="ob2-ol-wFN"/>
-                        </connections>
-                    </button>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="55.5" y="229"/>
+            <point key="canvasLocation" x="66" y="229"/>
         </window>
     </objects>
     <resources>

@@ -17,7 +17,8 @@ class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
 
     var delegate: ActiveAppicationsWindowDelegate?
 
-    var runningApplications: [RunningApplication]?
+    var runningApplications = [RunningApplication(name: "Firefox", icon: nil, memoryUsed: 10011),
+                            RunningApplication(name: "IntelliJ", icon: nil, memoryUsed: 20022)]
     
 //    init() {
 //        let ra1 = RunningApplication(name: "Firefox", icon: nil, memoryUsed: 10011)
@@ -36,6 +37,9 @@ class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
         self.window?.center()
         self.window?.makeKeyAndOrderFront(nil)
         NSApp.activateIgnoringOtherApps(true)
+        
+        
+        
     }
     
     func windowWillClose(notification: NSNotification) {
@@ -52,8 +56,8 @@ class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
         
         
         func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
-            return 0
-            //return self.runningApplications!.count
+            //return 0
+            return self.runningApplications.count
         }
         
         
@@ -65,7 +69,7 @@ class ActiveApplicationsWindow: NSWindowController, NSWindowDelegate  {
             tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
         
             if (tableColumn?.identifier == "appNameAndIcon") {
-                let applicationInfo = self.runningApplications![row]
+                let applicationInfo = self.runningApplications[row]
             
                 cellView.imageView!.image = applicationInfo.icon
                 cellView.textField!.stringValue = applicationInfo.name
