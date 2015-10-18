@@ -28,6 +28,10 @@ class StatusMenuController: NSObject, ActiveAppicationsWindowDelegate {
     
     
     @IBAction func memoryConsumptionAction(sender: NSMenuItem) {
+        //appMemoryWindow.runningApplications
+        
+        let activeApps = NSWorkspace.sharedWorkspace().runningApplications
+
        appMemoryWindow.showWindow(nil)
         
     }
